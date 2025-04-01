@@ -24,7 +24,7 @@ st.title("📈 Kelly Criterion Growth Simulation")
 
 # Sidebar inputs
 st.sidebar.header("Simulation Parameters")
-p_win = st.sidebar.slider("Winning Probability (%)", 50, 90, 68, 1) / 100
+p_win = st.sidebar.slider("Winning Probability (%)", 0, 100, 68, 1) / 100
 odds = st.sidebar.slider("Odds (Payout Ratio)", 1.1, 3.0, 1.3, 0.1)
 trials = st.sidebar.slider("Number of Bets", 50, 500, 180, 10)
 initial_capital = st.sidebar.number_input("Starting Capital ($)", 1000, 100000, 5000, 100)
